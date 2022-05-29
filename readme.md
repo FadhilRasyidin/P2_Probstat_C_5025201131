@@ -15,6 +15,7 @@ Data_Frame = data.frame(Responden, x, y)
 sdev = sd(Data_Frame$x-Data_Frame$y)
 sdev
 ```
+untuk memvisualisasikan data yang dilakukan adalah memasukan data x dan y ke dalam data frame. `R languange` mempunyai function untuk menghitung standar deviasi, `sd()`. standar deviasi selisih data x dan y yang dihitung.
 - carilah nilai t (p-value)
 ```r
 h = Data_Frame$y - Data_Frame$x
@@ -27,6 +28,9 @@ t
 pval = 2 * pt(-abs(t), df = t_n - 1)
 pval
 ```
+**p-value dengan distribusi t** dihitung dengan rumus berikut dengan **s** merupakan standar deviasi sampel dan sampel yang diambil adalah data pertama sampai ke-enam <br/>
+![image](https://user-images.githubusercontent.com/73109893/170882712-0b11b8bf-29c7-40fd-9303-42618977db6f.png)
+
 - tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
 ```r
 install.packages("BSDA")
