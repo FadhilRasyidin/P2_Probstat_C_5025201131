@@ -40,3 +40,27 @@ zval2c
 2 * pnorm(-abs(zval2c))
 
 ############ Nomor 3
+#a
+xbarh0 = 3.64
+sdevh0 = 1.67
+n_h0 = 19
+xbarh1 = 2.79
+sdevh1 = 1.32
+n_h1 = 27
+
+z_h0 = (xbarh0 - 0) / (sdevh0 / sqrt(n_h0))
+z_h0
+z_h1 = (xbarh1 - 0) / (sdevh1 / sqrt(n_h1))
+z_h1
+
+#b
+tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19, mean.y =2.79 , s.y = 1.32, n.y = 27, alternative = "greater", var.equal = TRUE)
+
+#c
+curve(dt(x, df=2), from=-4, to=4)
+
+#d
+qt(p = 0.05, df = 2, lower.tail = FALSE)
+#lower.tail = FALSE karena kalau TRUE minus
+
+#e & f ada di readme
