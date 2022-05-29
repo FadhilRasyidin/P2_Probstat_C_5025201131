@@ -74,6 +74,8 @@ tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19, mean.y =2.79 , s.y = 1.32, n.y = 27
 ```r
 curve(dt(x, df=2), from=-4, to=4)
 ```
+![image](https://user-images.githubusercontent.com/73109893/170881878-46981ea6-a580-47b7-acb0-4ac2775e4b01.png)
+
 - Nilai Kritikal
 ```r
 qt(p = 0.05, df = 2, lower.tail = FALSE)
