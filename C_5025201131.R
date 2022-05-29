@@ -37,7 +37,8 @@ sdev2c = 3900
 n2c = 100
 zval2c = (xbar2c - mu2c) / (sdev2c / sqrt(n2c))
 zval2c
-2 * pnorm(-abs(zval2c))
+pval2c = 2 * pnorm(-abs(zval2c))
+pval2c
 
 ############ Nomor 3
 #a
